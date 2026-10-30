@@ -17,10 +17,10 @@ class dequeue{
         size++;
     }
     bool full1(){
-        if(size>=max_len){return true;} return false;
+        if(size>=max_len){return true;} return false; //or back=max_len-1
     }
     bool empty1(){
-        if(size<=0){return true;} return false;
+        if(size<=0){return true;} return false; //or see if front==0
     }
     ll front1(){
         if(empty1()){cout<<"underflow\n"; return -1;}
