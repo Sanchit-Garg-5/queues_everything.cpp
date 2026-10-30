@@ -6,10 +6,10 @@ class cqueue1{
     public:
     ll arr[max_len]; ll front=0,back=0,size=0;
     bool full1(){
-        if(size>=max_len){return true;} return false;
+        if(size>=max_len){return true;} return false; //or see if (back+1)%max_len==front
     }
     bool empty1(){
-        if(size<=0){return true;} return false;
+        if(size<=0){return true;} return false; //or see if frotnt==0
     }
     int front1(){
         if(empty1()){return -1;}
